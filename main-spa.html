@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iBfree</title>
+  <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" href="assets/styles/style-ibefree.css">
+  <link rel="stylesheet" href="assets/styles/style-ibefree-update.css">
+  <style type="text/css"></style>
+  <style type="text/css">
+    .menu-card .label {
+      text-align: center;
+      margin-bottom: .75rem;
+      font-family: 'Kanit';
+      font-size: 18px;
+      color: #2B4A8E;
+      font-weight: 600;
+    }
+
+    .menu-card.disabled {
+      filter: grayscale(1);
+      -webkit-filter: grayscale(100%);
+    }
+
+
+    .task-notification-number {
+      position: absolute;
+      top: 11px;
+      right: 0px;
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #EC2918;
+      color: #FFFFFF;
+      font-family: Kanit;
+      font-size: 14px;
+      border: none;
+      text-align: center;
+    line-height: 32px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="appbar"><a class="appbar-menu" href="/menu"></a><img class="app-logo" src="assets/images/logo.svg"
+      alt="ibefree"></header>
+  <div class="container main" style="padding-bottom: 48px">
+    <header class="task-header">
+      <h1 class="title">บริการสปา</h1>
+    </header>
+    <div class="group-menu"> <a class="menu-card" href="#">
+        <div style="position: relative;">
+          <img class="icon" src="assets/images/i-task-urgent.svg">
+        
+            <span class="task-notification-number ">9</span>
+      
+        </div>
+        <p class="label">งานด่วน</p>
+      </a><a class="menu-card" href="#"> 
+        <div style="position: relative;">
+          <img class="icon" src="assets/images/icon-task-new.svg">
+            <span class="task-notification-number ">99+</span>
+        </div>
+        <p class="label">งานใหม่</p>
+      </a><a class="menu-card" href="#"> <img class="icon" src="assets/images/icon-task-all.svg">
+        <p class="label">งานทั้งหมด</p>
+      </a><a class="menu-card" href="#"> <img class="icon" src="assets/images/icon-task-today.svg">
+        <p class="label">งานวันนี้</p>
+      </a><a class="menu-card " href="#"> <img class="icon" src="assets/images/icon-task-history.svg">
+        <p class="label">ประวัติงาน</p>
+      </a><a class="menu-card " href="#"> <img class="icon" src="assets/images/service-holiday.svg">
+        <p class="label">ตั้งค่าวันหยุด</p>
+      </a><a class="menu-card " href="#"> <img class="icon" src="assets/images/service-holiday.svg">
+        <p class="label">ตั้งเวลาเปิด-ปิด</p>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

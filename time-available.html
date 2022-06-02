@@ -1,0 +1,403 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>iBeFree</title>
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree-update.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree-spa.css">
+
+</head>
+
+<body>
+    <div id="root">
+        <header class="appbar"><a class="appbar-menu" href="/menu"></a>
+            <img class="app-logo" src="assets/images/logo.svg" alt="ibefree">
+            <div class="group-control"><button class="appbar-btn-search"></button><button
+                    class="appbar-btn-filter"></button></div>
+        </header>
+        <div class="container main" style="padding-top: 112px; background-color: rgb(255, 255, 255);">
+            <div class="page-bar">
+                <div class="appbar-btn-back "></div>
+                <h1 class="page-name">ตั้งเวลาเปิด-ปิด</h1>
+                <div></div>
+            </div>
+            <div class="page-content">
+
+
+                <div class="section-box" style="padding-top: 24px;">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-day">
+                            <div class="text" id="sunday" style="color: rgba(0, 0, 0, 0.4);">
+                                อาทิตย์
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" onclick="switch_sunday()">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="slide-box" id="select-sunday">
+                            <div class="wrapper" style="margin-right: 10px;">
+                                <select class="select-time">
+                                    <option>9:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+
+                            <div class="wrapper">
+                                <select class="select-time">
+                                    <option>19:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section-box">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-day">
+                            <div class="text" id="monday" style="color: rgba(0, 0, 0, 0.4);">
+                                จันทร์
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" onclick="switch_monday()">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="slide-box" id="select-monday">
+                            <div class="wrapper" style="margin-right: 10px;">
+                                <select class="select-time">
+                                    <option>9:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+
+                            <div class="wrapper">
+                                <select class="select-time">
+                                    <option>19:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="section-box">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-day">
+                            <div class="text" id="tuesday" style="color: rgba(0, 0, 0, 0.4);">
+                                อังคาร
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" onclick="switch_tuesday()">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="slide-box" id="select-tuesday">
+                            <div class="wrapper" style="margin-right: 10px;">
+                                <select class="select-time">
+                                    <option>9:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+
+                            <div class="wrapper">
+                                <select class="select-time">
+                                    <option>19:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="section-box">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-day">
+                            <div class="text" id="wednesday" style="color: rgba(0, 0, 0, 0.4);">
+                                พุธ
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" onclick="switch_wednesday()">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="slide-box" id="select-wednesday">
+                            <div class="wrapper" style="margin-right: 10px;">
+                                <select class="select-time">
+                                    <option>9:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+
+                            <div class="wrapper">
+                                <select class="select-time">
+                                    <option>19:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section-box">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-day">
+                            <div class="text" id="thurday" style="color: rgba(0, 0, 0, 0.4);">
+                                พฤหัสบดี
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" onclick="switch_thurday()">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="slide-box" id="select-thurday">
+                            <div class="wrapper" style="margin-right: 10px;">
+                                <select class="select-time">
+                                    <option>9:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+
+                            <div class="wrapper">
+                                <select class="select-time">
+                                    <option>19:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section-box">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-day">
+                            <div class="text" id="friday" style="color: rgba(0, 0, 0, 0.4);">
+                                ศุกร์
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" onclick="switch_friday()">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="slide-box" id="select-friday">
+                            <div class="wrapper" style="margin-right: 10px;">
+                                <select class="select-time">
+                                    <option>9:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+
+                            <div class="wrapper">
+                                <select class="select-time">
+                                    <option>19:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section-box">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-day">
+                            <div class="text" id="saturday" style="color: rgba(0, 0, 0, 0.4);">
+                                เสาร์
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" onclick="switch_saturday()">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="slide-box" id="select-saturday">
+                            <div class="wrapper" style="margin-right: 10px;">
+                                <select class="select-time">
+                                    <option>9:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+
+                            <div class="wrapper">
+                                <select class="select-time">
+                                    <option>19:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="group-action" style="padding: 16px;">
+                    <button class="btn-primary disabled" disabled>
+                        บันทึก</button>
+                    <button class="btn-basic disabled" disabled>
+                        ยกเลิก</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<style>
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    // $('.wrapper select').on('click', function (e) {
+    //     console.log('click');
+    //     $(this).parent().addClass('active');
+    // });
+    // $('.wrapper select').on('blur', function (e) {
+    //     $(this).parent().removeClass('active');
+    //     $(this).parent().addClass('default');
+    // });
+
+    // $('.wrapper select').on('change', function (e) {
+    //     console.log('change');
+    //     $(this).parent().removeClass('active');
+    //     $(this).parent().addClass('default');
+    // });
+
+    function switch_sunday() {
+        var x = document.getElementById("sunday");
+        var y = document.getElementById("select-sunday");
+        if (x.style.color === "rgba(0, 0, 0, 0.4)") {
+            x.style.color = "#000";
+            y.style.height = "56px"
+        } else {
+            x.style.color = "rgba(0, 0, 0, 0.4)";
+            y.style.height = "0px"
+        }
+    }
+
+    function switch_monday() {
+        var x = document.getElementById("monday");
+        var y = document.getElementById("select-monday");
+        if (x.style.color === "rgba(0, 0, 0, 0.4)") {
+            x.style.color = "#000";
+            y.style.height = "56px"
+        } else {
+            x.style.color = "rgba(0, 0, 0, 0.4)";
+            y.style.height = "0px"
+        }
+    }
+
+    function switch_tuesday() {
+        var x = document.getElementById("tuesday");
+        var y = document.getElementById("select-tuesday");
+        if (x.style.color === "rgba(0, 0, 0, 0.4)") {
+            x.style.color = "#000";
+            y.style.height = "56px"
+        } else {
+            x.style.color = "rgba(0, 0, 0, 0.4)";
+            y.style.height = "0px"
+        }
+    }
+
+    function switch_wednesday() {
+        var x = document.getElementById("wednesday");
+        var y = document.getElementById("select-wednesday");
+        if (x.style.color === "rgba(0, 0, 0, 0.4)") {
+            x.style.color = "#000";
+            y.style.height = "56px"
+        } else {
+            x.style.color = "rgba(0, 0, 0, 0.4)";
+            y.style.height = "0px"
+        }
+    }
+
+    function switch_thurday() {
+        var x = document.getElementById("thurday");
+        var y = document.getElementById("select-thurday");
+        if (x.style.color === "rgba(0, 0, 0, 0.4)") {
+            x.style.color = "#000";
+            y.style.height = "56px"
+        } else {
+            x.style.color = "rgba(0, 0, 0, 0.4)";
+            y.style.height = "0px"
+        }
+    }
+
+    function switch_friday() {
+        var x = document.getElementById("friday");
+        var y = document.getElementById("select-friday");
+        if (x.style.color === "rgba(0, 0, 0, 0.4)") {
+            x.style.color = "#000";
+            y.style.height = "56px"
+        } else {
+            x.style.color = "rgba(0, 0, 0, 0.4)";
+            y.style.height = "0px"
+        }
+    }
+
+    function switch_saturday() {
+        var x = document.getElementById("saturday");
+        var y = document.getElementById("select-saturday");
+        if (x.style.color === "rgba(0, 0, 0, 0.4)") {
+            x.style.color = "#000";
+            y.style.height = "56px"
+        } else {
+            x.style.color = "rgba(0, 0, 0, 0.4)";
+            y.style.height = "0px"
+        }
+    }
+</script>

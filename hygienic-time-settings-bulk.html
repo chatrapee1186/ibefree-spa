@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBfree</title>
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree-update.css">
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <header class="appbar"><a class="appbar-menu" href="/menu"></a><img class="app-logo" src="assets/images/logo.svg" alt="ibefree"></header>
+    <div class="container main" style="min-height: 100vh; padding: 120px 16px 16px; background-color: rgb(255, 255, 255);">
+      <div class="page-bar">
+        <button class="appbar-btn-back"></button>
+        <h1 class="page-name">ตั้งค่าการให้บริการ</h1>
+      </div>
+      <div class="form"> 
+        <section class="section-form"> 
+          <div class="section-header"> 
+            <h2 class="title">ช่วงวันที่</h2>
+          </div>
+          <div class="section-body"> 
+            <input class="option-setting-bulk-daterange" type="text" name="option-setting-bulk-daterange" readonly value="">
+          </div>
+        </section>
+        <section class="section-form"> 
+          <div class="section-header"> 
+            <h2 class="title">วัน</h2><a class="btn-link" href="#">
+               เลือกทั้งหมด</a>
+          </div>
+          <div class="section-body"> 
+            <div class="option-group-days">
+              <input type="checkbox" name="option-days" id="opt-day-sun">
+              <label for="opt-day-sun">อา</label>
+              <input type="checkbox" name="option-days" id="opt-day-mon">
+              <label for="opt-day-mon">จ</label>
+              <input type="checkbox" name="option-days" id="opt-day-tue">
+              <label for="opt-day-tue">อ</label>
+              <input type="checkbox" name="option-days" id="opt-day-wed">
+              <label for="opt-day-wed">พ</label>
+              <input type="checkbox" name="option-days" id="opt-day-thu">
+              <label for="opt-day-thu">พฤ</label>
+              <input type="checkbox" name="option-days" id="opt-day-fri">
+              <label for="opt-day-fri">ศ</label>
+              <input type="checkbox" name="option-days" id="opt-day-sat">
+              <label for="opt-day-sat">ส</label>
+            </div>
+          </div>
+        </section>
+        <section class="section-form"> 
+          <div class="section-header"> 
+            <h2 class="title">เวลา</h2><a class="btn-link" href="#">
+               เลือกทั้งหมด</a>
+          </div>
+          <div class="section-body"> 
+            <div class="option-group-times"> 
+              <div class="col"> 
+                <input type="checkbox" name="option-time" id="opt-time-10">
+                <label for="opt-time-10">10:00</label>
+                <input type="checkbox" name="option-time" id="opt-time-11">
+                <label for="opt-time-11">11:00</label>
+                <input type="checkbox" name="option-time" id="opt-time-12">
+                <label for="opt-time-12">12:00</label>
+                <input type="checkbox" name="option-time" id="opt-time-13">
+                <label for="opt-time-13">13:00</label>
+              </div>
+              <div class="col">
+                <input type="checkbox" name="option-time" id="opt-time-14">
+                <label for="opt-time-14">14:00</label>
+                <input type="checkbox" name="option-time" id="opt-time-15">
+                <label for="opt-time-15">15:00</label>
+                <input type="checkbox" name="option-time" id="opt-time-16">
+                <label for="opt-time-16">16:00</label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-form"> 
+          <div class="section-header"> 
+            <h2 class="title">เปิดรับงาน</h2>
+          </div>
+          <div class="section-body"> 
+            <div class="option-group-slots">
+              <input type="radio" name="option-slot" id="opt-slot-0">
+              <label for="opt-slot-0">ไม่รับ</label>
+              <input type="radio" name="option-slot" id="opt-slot-1">
+              <label for="opt-slot-1">1 งาน</label>
+              <input type="radio" name="option-slot" id="opt-slot-2">
+              <label for="opt-slot-2">2 งาน</label>
+              <input type="radio" name="option-slot" id="opt-slot-3">
+              <label for="opt-slot-3">3 งาน</label>
+            </div>
+          </div>
+        </section>
+        <div class="group-action">
+          <button class="btn-primary">
+             บันทึก</button>
+          <button class="btn-basic">
+             ยกเลิก</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script>
+      $('input[name="option-setting-bulk-daterange"]').daterangepicker({
+          "buttonClasses": "btn-inline",
+          "applyButtonClasses": "btn-primary",
+          "cancelClass": "btn-basic",
+          "autoUpdateInput": false,
+          locale: {
+              format: 'DD/MM/YYYY',
+          }
+      });
+      var dateToday = moment();
+      var daterangeToday = dateToday.format('DD/MM/') + '' + (dateToday.format('YYYY').toString() * 1 + 543) + ' - ' + dateToday.format('DD/MM/') + '' + (dateToday.format('YYYY').toString() * 1 + 543)
+      $('input[name="option-setting-bulk-daterange"]').val(daterangeToday)
+      $('input[name="option-setting-bulk-daterange"]').on('apply.daterangepicker', function(ev, picker) {
+          $(this).val(picker.startDate.format('DD/MM/') + (picker.startDate.format('YYYY').toString() * 1 + 543) + ' - ' + picker.endDate.format('DD/MM/') + (picker.endDate.format('YYYY').toString() * 1 + 543));
+      });
+    </script>
+  </body>
+</html>

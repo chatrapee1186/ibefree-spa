@@ -1,0 +1,230 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>iBeFree</title>
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree-update.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree-spa.css">
+</head>
+
+<body>
+    <div id="root">
+        <header class="appbar"><a class="appbar-menu" href="/menu"></a>
+            <img class="app-logo" src="assets/images/logo.svg" alt="ibefree">
+            <div class="group-control"><button class="appbar-btn-search"></button><button
+                    class="appbar-btn-filter"></button></div>
+        </header>
+        <div class="container main" style="padding-top: 112px; background-color: rgb(255, 255, 255);">
+            <div class="page-bar">
+                <div class="appbar-btn-back "></div>
+                <h1 class="page-name">ตัวกรอง</h1>
+                <div></div>
+            </div>
+            <div class="page-content">
+
+                <div class="section-box-fillter" style="padding-top: 16px;">
+                    <div class="box-fillter-title ">
+                        <div class="text">
+                            สาขา
+                        </div>
+                        <div class="text-check_all" onclick="selectAll()">เลือกทั้งหมด</div>
+                    </div>
+                </div>
+
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                Arnoma Grand Hotel
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-1">
+                                <label for="opt-time-1"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                Bangkok The Allez Sukhumvit 13
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-2">
+                                <label for="opt-time-2"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                The Market Bangkok
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-3">
+                                <label for="opt-time-3"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                Bangkok Ginza Thonglor
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-4">
+                                <label for="opt-time-4"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                ibis Styles Ratchada
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-5">
+                                <label for="opt-time-5"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                I’m Chinatown
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-6">
+                                <label for="opt-time-6"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                Bangkok Carlton Hotel Sukhumvit
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-7">
+                                <label for="opt-time-7"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                Bangkok Mahanakhon CUBE
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-8">
+                                <label for="opt-time-8"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                Bangkok Central Embassy
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-9">
+                                <label for="opt-time-9"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                Bangkok Leisure Space Central World
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-10">
+                                <label for="opt-time-10"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-box-fillter">
+                    <div style=" border-bottom: 1px solid #f2f2f2;">
+                        <div class="box-fillter">
+                            <div class="text">
+                                Ekkamai
+                            </div>
+                            <div class="option-group-times-spa">
+                                <input type="checkbox" name="option-time" id="opt-time-11">
+                                <label for="opt-time-11"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-action" style="padding: 16px;">
+                    <button class="btn-primary ">
+                        แสดงรายการ</button>
+                    <button class="btn-basic" onclick="cancelAll()">
+                        ล้างตัวกรอง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+<script>
+    function toggle(source) {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i] != source)
+                checkboxes[i].checked = source.checked;
+        }
+    }
+
+
+    function selectAll() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].type == 'checkbox')
+                checkboxes[i].checked = true;
+        }
+    }
+
+    function cancelAll() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].type == 'checkbox')
+                checkboxes[i].checked = false;
+        }
+    }
+</script>

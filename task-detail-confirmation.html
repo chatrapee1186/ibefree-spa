@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBfree</title>
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree-update.css">
+    <link rel="stylesheet" href="assets/styles/style-ibefree-spa.css">
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <header class="appbar"><a class="appbar-menu" href="/menu"></a><img class="app-logo" src="assets/images/logo.svg"
+            alt="ibefree"></header>
+    <div class="container main" style="min-height: 100vh; padding-top: 112px; background-color: rgb(255, 255, 255);">
+        <div class="page-bar">
+            <button class="appbar-btn-back"></button>
+            <h1 class="page-name">รายละเอียดงาน</h1>
+        </div>
+        <div class="page-content">
+            <div class="section-refid">เลขอ้างอิง 123456789012345</div>
+            <section class="section-info" style="padding-top: 16px;">
+                <div class="container">
+                    <div class="task-owner" style="align-items: center; border-bottom: 1px solid #f2f2f2;
+                    padding-bottom: 16px;">
+                        <div class="info">
+                            <h2 class="section-info-title">ข้อมูลลูกค้า</h2>
+                            <div style="display: flex; padding-top: 4px;">
+                                <img src="assets/images/avatar-client-deme.png" alt="" class="image-avatar">
+                                <div class="section-content-spa"> <span class="unit-spa">คุณกานดา แจ่มใส</span><span
+                                        class="owner-spa">Nue Noble Fai Chai - Wang Lang</span></div>
+                            </div>
+
+                        </div>
+                        <div class="action" style="align-self: flex-end;">
+                            <button class="task-btn-call-big" style="margin-left: 12px;"> <img
+                                    src="assets/images/icon-call.svg" alt="" style="width: 26px; height: 26px;">
+                                <div class="font-call">โทร</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-info" style="padding-top: 16px;">
+                <div class="container">
+                    <div class="task-duedate"> <i class="i s calendar"> </i>
+                        <div>
+                            <h2 class="section-info-title">
+                                วัน-เวลา</h2>
+                            <p class="section-content-title-spa">
+                                20/10/2564 10:00</p>
+                        </div>
+                    </div>
+                    <div class="section-divider"></div>
+                </div>
+            </section>
+            <section class="section-info" style="padding-top: 16px;">
+                <div class="container">
+                    <div class="task-duedate"> <i class="i s location"> </i>
+                        <div>
+                            <h2 class="section-info-title">
+                                สาขา</h2>
+                            <p class="section-content-title-spa">
+                                Bangkok Central Embassy</p>
+                        </div>
+                    </div>
+                    <div class="section-divider"></div>
+                </div>
+            </section>
+            <section class="section-info" style="padding-top: 16px;">
+                <div class="container">
+                    <h2 class="section-info-title" style="padding-bottom: 8px;">รายละเอียดบริการ</h2>
+                    <div class="section-content-spa"
+                        style="display:flex; justify-content: space-between; padding-bottom: 8px;">
+                        <div>
+                            Ultimate Unwind Body Treatment</div>
+                        <div>
+                            x1</div>
+                    </div>
+                    <div class="section-content-spa"
+                        style="display:flex; justify-content: space-between; padding-bottom: 16px;">
+                        <div>
+                            Body & Soul Balancing Message</div>
+                        <div>
+                            x1</div>
+                    </div>
+                    <div class="section-divider"></div>
+                </div>
+            </section>
+            <section class="section-info" style="padding-top: 16px;">
+                <div class="container">
+                    <h2 class="section-info-title" style="padding-bottom: 8px;">คำขอเพิ่มเติม</h2>
+                    <div class="section-content-spa">
+                        -</div>
+                </div>
+            </section>
+            <section class="section-info" style="padding-top: 16px;">
+                <div class="container">
+                    <button class="btn-next-step" style="margin-bottom: 12px;">
+                        <span class="font-spa">ตกลงเวลานี้</span>
+                    </button>
+                </div>
+                <div class="container">
+                    <button class="btn-grey" id="myBtn" style="margin-bottom: 12px;"><span
+                            class="font">เสนอเวลาอื่น</span></button>
+                </div>
+
+                <div class="container">
+                    <button class="btn-grey" id="myBtn2"><span class="font">ปฏิเสธรับงาน</span></button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal-spa">
+        <div class="modal-content-spa">
+            <div class="title" style="padding-bottom: 26px;">
+                <div class="text-modal">
+                    เสนอเวลาอื่น</div>
+                <img src="assets/images/icon-x-yellow.svg" alt="" class="close-spa-modal" id="i_close">
+            </div>
+            <div style="padding: 16px; padding-bottom: 0px; padding-top: 0px;">
+                <div class="section-header">
+                    <h2 class="modal-title" style="padding-top: 26px;">วันให้บริการ</h2>
+                </div>
+            </div>
+
+            <div class="option-group-slots-spa">
+                <div class="col">
+                    <input type="radio" name="option-slot" id="opt-slot-0">
+                    <label for="opt-slot-0" style="padding-bottom: 12px;">ภายในวันนี้</label>
+                </div>
+
+                <div class="col">
+                    <input type="radio" name="option-slot" id="opt-slot-4">
+                    <label for="opt-slot-4" style="padding-bottom: 12px;">วันถัดไป</label>
+                </div>
+            </div>
+
+            <div style="padding: 16px; padding-bottom: 0px; padding-top: 0px;">
+                <div class="section-header">
+                    <h2 class="modal-title ">เวลา</h2>
+                </div>
+                <div class="wrapper" style="width: 100%; padding-bottom: 4px;">
+                    <select class="select-time">
+                        <option>19:00</option>
+                        <option>10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                    </select>
+                </div>
+            </div>
+
+            <section class="section-info" style="display: flex; width: 100%;">
+                <div class="container" style="width: 50%; padding-right: 0px;">
+                    <button class="btn-primary" style="margin-bottom: 12px; width: 100%;">
+                        <span class="font">ยืนยัน</span>
+                    </button>
+                </div>
+                <div class="container" style="width: 50%; padding-left: 0px;">
+                    <button class="btn-basic" id="myBtn" style="margin-bottom: 0px; width: 100%;"><span class="font"
+                            id="close_1">ยกเลิก</span></button>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+
+    <div id="myModal2" class="modal-spa">
+        <div class="modal-content-spa">
+            <div class="title" style="padding-bottom: 20px;">
+                <div class="text">
+                    ปฏิเสธรับงาน</div>
+            </div>
+
+            <section class="section-info" style="display: flex; width: 100%;">
+                <div class="container" style="width: 50%; padding-right: 0px;">
+                    <button class="btn-primary" style="margin-bottom: 12px; width: 100%;">
+                        <span class="font">ยืนยัน</span>
+                    </button>
+                </div>
+                <div class="container" style="width: 50%; padding-left: 0px;">
+                    <button class="btn-basic" id="myBtn" style="margin-bottom: 0px; width: 100%;"><span class="font"
+                            id="close_2">ยกเลิก</span></button>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<style>
+    .modal-title {
+        padding-bottom: 12px;
+        padding-left: 0px;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+</style>
+
+
+
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var i_close = document.getElementById("i_close");
+    var close_1 = document.getElementById("close_1");
+
+    var modal2 = document.getElementById("myModal2");
+    var btn2 = document.getElementById("myBtn2");
+    var close_2 = document.getElementById("close_2");
+
+    btn.onclick = function () {
+        modal.style.display = "flex";
+    }
+    i_close.onclick = function () {
+        modal.style.display = "none";
+    }
+    close_1.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    btn2.onclick = function () {
+        modal2.style.display = "flex";
+    }
+    close_2.onclick = function () {
+        modal2.style.display = "none";
+    }
+</script>
+
+<!-- <script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script src="assets/js/daterangepicker.js"></script>
+<script>
+    $('input[name="option-setting-bulk-daterange"]').daterangepicker({
+        "buttonClasses": "btn-inline",
+        "applyButtonClasses": "btn-primary",
+        "cancelClass": "btn-basic",
+        "autoUpdateInput": false,
+        "singleDatePicker": true,
+        locale: {
+            format: 'DD/MM/YYYY',
+        }
+    });
+    var dateToday = moment();
+    var daterangeToday = dateToday.format('DD/MM/') + '' + (dateToday.format('YYYY').toString() * 1 + 543) 
+    $('input[name="option-setting-bulk-daterange"]').val(daterangeToday)
+    $('input[name="option-setting-bulk-daterange"]').on('apply.daterangepicker', function (ev, picker) {
+        $(this).val(picker.startDate.format('DD/MM/') + (picker.startDate.format('YYYY').toString() * 1 + 543));
+    });
+</script> -->
